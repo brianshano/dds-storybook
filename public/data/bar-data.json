@@ -1,0 +1,140 @@
+{
+  "kitchenEMCBs": [
+    { "label": "Trash Compactor", "id": "100045" },
+    { "label": "Dinette & Kitchen Outlets", "id": "100048" },
+    { "label": "Double Oven", "id": "100065" },
+    { "label": "Refrigerator", "id": "100066" },
+    { "label": "Kitchen outlets", "id": "100067" },
+    { "label": "dishwasher / disposal", "id": "100120" },
+    { "label": "Kitchen & Dining Outlets", "id": "100194" },
+    { "label": "cooktop", "id": "100316" }
+  ],
+  "activeDayData": {
+    "average": "Sunday",
+    "average_value": 1,
+    "last_average": "Sunday",
+    "last_average_value": "Sunday",
+    "weekly_data": [
+      {
+        "week": "Last week",
+        "short_week": "Last week",
+        "epoch_week_ending": 1640476800,
+        "day": "Sunday",
+        "value": 1,
+        "percent": 80
+      },
+      {
+        "week": "2 weeks ago",
+        "short_week": "2w",
+        "epoch_week_ending": 1639872000,
+        "day": "Sunday",
+        "value": 1,
+        "percent": 21
+      },
+      {
+        "week": "3 weeks ago",
+        "short_week": "3w",
+        "epoch_week_ending": 1639267200,
+        "day": "Wednesday",
+        "value": 4,
+        "percent": 20
+      },
+      {
+        "week": "4 weeks ago",
+        "short_week": "4w",
+        "epoch_week_ending": 1638662400,
+        "day": "Tuesday",
+        "value": 3,
+        "percent": 23
+      },
+      {
+        "week": "5 weeks ago",
+        "short_week": "5w",
+        "epoch_week_ending": 1638057600,
+        "day": "Friday",
+        "value": 6,
+        "percent": 19
+      }
+    ]
+  },
+  "activeSlotData": {
+    "average": "morning",
+    "average_value": 5,
+    "last_average": "morning",
+    "last_average_value": "morning",
+    "weekly_data": [
+      {
+        "week": "Last week",
+        "short_week": "Last week",
+        "epoch_week_ending": 1640476800,
+        "slot": "afternoon",
+        "value": 3,
+        "percent": 30
+      },
+      {
+        "week": "2 weeks ago",
+        "short_week": "2w",
+        "epoch_week_ending": 1639872000,
+        "slot": "evening",
+        "value": 2,
+        "percent": 24
+      },
+      {
+        "week": "3 weeks ago",
+        "short_week": "3w",
+        "epoch_week_ending": 1639267200,
+        "slot": "night",
+        "value": 1,
+        "percent": 37
+      },
+      {
+        "week": "4 weeks ago",
+        "short_week": "4w",
+        "epoch_week_ending": 1638662400,
+        "slot": "evening",
+        "value": 2,
+        "percent": 35
+      },
+      {
+        "week": "5 weeks ago",
+        "short_week": "5w",
+        "epoch_week_ending": 1638057600,
+        "slot": "sleep_time",
+        "value": 6,
+        "percent": 26
+      }
+    ]
+  },
+  "durationData": {
+    "average": 19.313333333333333,
+    "lower_quarentile": 12.9975,
+    "upper_quarentile": 26.455,
+    "last_average": 19.305833333333336,
+    "weekly_data": [
+      { "week": "Last week", "short_week": "Last week", "epoch_week_ending": 1640476800, "value": 7.61 },
+      { "week": "2 weeks ago", "short_week": "2w", "epoch_week_ending": 1639872000, "value": 17.79 },
+      { "week": "3 weeks ago", "short_week": "3w", "epoch_week_ending": 1639267200, "value": 20.16 },
+      { "week": "4 weeks ago", "short_week": "4w", "epoch_week_ending": 1638662400, "value": 12.959999999999999 },
+      { "week": "5 weeks ago", "short_week": "5w", "epoch_week_ending": 1638057600, "value": 0 }
+    ],
+    "increase": -61,
+    "increase_on_average": 0
+  },
+  "startData": {
+    "this_week_average": 8.166666666666666,
+    "lower_quarentile": 7.241666666666667,
+    "upper_quarentile": 8.1,
+    "historic_average": 8.33396624472574,
+    "last_historic_average": 8.77831325301205,
+    "week_Data": [
+      { "name": "Sun", "time": 9.133333333333333 },
+      { "name": "Mon", "time": 7.2 },
+      { "name": "Tue", "time": 0 },
+      { "name": "Wed", "time": 0 },
+      { "name": "Thu", "time": 0 },
+      { "name": "Fri", "time": 0 },
+      { "name": "Sat", "time": 0 }
+    ]
+  },
+  "weekEnding": "2021-12-25T00:00:00.000Z"
+}

@@ -4,7 +4,6 @@ import { AreaChart, Area, ResponsiveContainer } from "recharts";
 import { Bar, Cell, BarChart, XAxis, Label, LabelList, YAxis, Tooltip, ReferenceLine, CartesianGrid } from "recharts";
 import useResizeObserver from "../../../.storybook/useResizeObserver";
 import { decimalToHour, RenderReferenceLabel } from "../../../.storybook/helpers";
-import barData from "./bar-data.json";
 
 import "./bar.css";
 
@@ -12,6 +11,7 @@ import "./bar.css";
  * Primary UI component for user interaction
  */
 export const BarRechart = ({
+  data,
   primary,
   stroke,
   fill,
@@ -28,12 +28,10 @@ export const BarRechart = ({
   const [widthData, setWidthData] = useState(400);
   const [heightData, setHeightData] = useState(400);
   const [weeklyData, setWeeklyData] = useState();
-  const [data, setData] = useState(barData?.durationData);
   const dimensions = useResizeObserver(wrapperRef);
 
   useEffect(() => {
-    console.log("set bar data", barData?.durationData);
-    setData(barData?.durationData);
+    console.log("set bar data", data);
   }, []);
 
   useEffect(() => {
@@ -46,8 +44,8 @@ export const BarRechart = ({
   }, [dimensions]);
 
   useEffect(() => {
-    let newData = data?.weekly_data;
-    newData.sort((a, b) => a.epoch_week_ending - b.epoch_week_ending);
+    let newData = data;
+    newData?.sort((a, b) => a.epoch_week_ending - b.epoch_week_ending);
     console.log("set weekly", newData);
     setWeeklyData(newData);
   }, [data]);
@@ -158,7 +156,7 @@ export const BarRechart = ({
 
         <Bar dataKey="value" fill="url(#colorPv)" maxBarSize={40} shape={props.lolipopBar && <SkinnyBar />}>
           {props.barLabel && <LabelList dataKey="value" position="insideTopLeft" content={renderLabelAboveBar} />}
-          {data?.weekly_data.map((entry, index) => {
+          {data?.map((entry, index) => {
             return (
               <Cell
                 key={`cell-${index}`}
@@ -214,6 +212,7 @@ BarRechart.propTypes = {
   showGrid: PropTypes.bool,
   referenceLine: PropTypes.bool,
   referenceLabel: PropTypes.string,
+  data: PropTypes.array,
   referenceLabelBg: PropTypes.string,
   referenceLineDirection: PropTypes.oneOf(["vertical", "horizontal"]),
   barDefaultColor: PropTypes.oneOf(["#D5D8DA", "#424e54", "#269AF4"]),

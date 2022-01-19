@@ -1,0 +1,34 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #453937;
+}
+.storybook-button--content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.storybook-button--icon {
+  padding: 8px 8px 8px 0;
+}
+.storybook-button--label {
+  /* padding: 8px; */
+}
+.recharts-wrapper,
+svg.recharts-surface {
+  /* width: 100% !important;
+  max-width: 100% !important; */
+  margin: 0 !important;
+}
+.recharts-tooltip-wrapper {
+  background-color: white;
+  padding: 5px;
+  border: 1px solid gray;
+}
+.recharts-layer.recharts-reference-line > text {
+  margin-left: 8rem;
+}
